@@ -1,0 +1,11 @@
+body{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: pink;
+    font-size: 4em;
+}
