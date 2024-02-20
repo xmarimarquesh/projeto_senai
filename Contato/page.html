@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="script.js"></script>
     <title>Controle de estoque</title>
 </head>
 <body>
+    <a href="../Menu/page.html">Voltar</a>
     <h1>Contato</h1>
+    <h2>Insira dados iniciais para envio</h2>
+
+    <input id="nome" type="text" placeholder="Digite seu nome... ">
+
+    <br><br>
+
+    <textarea id="mensagem" placeholder="Digite suas observações... "></textarea>
+
+    <br><br>
+
+    <button onclick="conferirMensagemWhatsApp()">Conferir mensagem</button>
+
+    <br><br>
+
+    <p>Nome: <span id="confNome"></span></p>
+    <p>Observações: <span id="confMsg"></span></p>
+    <p>Data: <span id="confDate"></span></p>
+
+    <br><br>
+
+    <button onclick="enviar()">Enviar mensagem</button>
 </body>
 </html>
