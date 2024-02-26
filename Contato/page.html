@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="script.js"></script>
     <title>Controle de estoque</title>
 </head>
 <body>
-    <a href="../Menu/page.html">Voltar</a>
-    <h1>Contato</h1>
-    <h2>Insira dados iniciais para envio</h2>
+    <div class="form">
+        <a href="../Menu/page.html"><span class="material-symbols-outlined">arrow_back_ios_new</span></a>
+        <h1>Contato</h1>
+        <h2>Insira dados iniciais para envio</h2>
 
-    <input id="nome" type="text" placeholder="Digite seu nome... ">
+        <input id="nome" type="text" placeholder="Digite seu nome... ">
 
-    <br><br>
+        <br><br>
 
-    <textarea id="mensagem" placeholder="Digite suas observações... "></textarea>
+        <textarea id="mensagem" placeholder="Digite suas observações... "></textarea>
 
-    <br><br>
+        <br><br>
 
-    <button onclick="conferirMensagemWhatsApp()">Conferir mensagem</button>
+        <button onclick="conferirMensagemWhatsApp()">Conferir mensagem</button>
 
-    <br><br>
+        <br><br>
 
-    <p>Nome: <span id="confNome"></span></p>
-    <p>Observações: <span id="confMsg"></span></p>
-    <p>Data: <span id="confDate"></span></p>
+        <p><strong>Nome:</strong><span id="confNome"></span></p>
+        <p><strong>Observações:</strong><span id="confMsg"></span></p>
+        <p><strong>Data:</strong><span id="confDate"></span></p>
 
-    <br><br>
+        <br><br>
 
-    <button onclick="enviar()">Enviar mensagem</button>
+        <button onclick="enviar()">Enviar mensagem</button>
+    </div>
 </body>
 </html>

@@ -3,21 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
     <title>Controle de estoque</title>
 </head>
 <body>
-    <a href="../Menu/page.html">Voltar</a>
-    <h1>Tabela</h1>
-    <br><br>
-    <div>
-        <input type="text" placeholder="Nome..." id="nome">
+    <div class="form">
+        <a href="../Menu/page.html"><span class="material-symbols-outlined">arrow_back_ios_new</span></a>
+        <h1>Tabela</h1>
         <br><br>
-        <input type="text" placeholder="Valor..." id="nome">
-        <br><br>
-        <input type="text" placeholder="Descrição..." id="nome">
+        <div>
+            <input type="text" placeholder="Nome..." id="nome">
+            <br><br>
+            <input type="number" placeholder="Valor..." id="valor">
+            <br><br>
+            <input type="number" placeholder="mL..." id="ml">
+            <br><br>
+            <input type="number" placeholder="Quantidade..." id="quantidade">
+        </div>
+        <div>
+            <button onclick="adicionarItem()">👇🏻</button>
+        </div>
+        <div>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>mL</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div>
+            <button onclick="exportarParaExcel()">Gerar excel</button>
+        </div>
     </div>
-    <div>
-        <button onclick="adicionarItem()">👇🏻</button>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>

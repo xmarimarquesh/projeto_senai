@@ -1,11 +1,103 @@
 body{
+    margin: 2%;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
 h1{
-    color: pink;
+    margin: 0;
+    color: #7d5226;
     font-size: 4em;
+    text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+button{
+    border: none;
+    background-color: #8c6640;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 200px;
+    color: white;
+    width: 200px;
+}
+
+input, textarea{
+    width: 300px;
+    height: 20px;
+    background-color: #e0d6cc;
+    border-radius: 4px;
+    padding: 3px;
+    max-width: 200px;
+}
+
+span{
+    margin-top: 2%;
+}
+tbody{
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+ 
+table td {
+    border: 1px solid black;
+    background-color: #d9ccbf;
+}
+ 
+table th {
+    border: 1px solid black;
+    background-color: #9c7a59;
+    min-width: 90px;
+}
+
+li{
+    cursor: pointer;
+    font-size: 2em;
+    transition: all 200ms linear;
+    opacity: 1;
+    background-color: #9c7a59;
+    border-radius: 999px;
+    padding: 5px 15px;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+
+}
+
+
+li:hover{
+    transition: all 200ms linear;
+    opacity: 0.7;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form{
+    display: flex;
+    margin: 2%;
+    background-color: bisque;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.form input, button, table{
+    margin: 5%;
 }
